@@ -4,7 +4,7 @@ pipeline {
     stage('build') {
       steps {
         bat 'npm install'
-        bat 'npm run build'
+        bat 'react-scripts build'
       }
     }
 
