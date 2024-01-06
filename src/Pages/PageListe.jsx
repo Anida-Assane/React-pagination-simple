@@ -6,7 +6,7 @@ import "./PageListe.css";
 export default function PageListe() {
   const [datas, setDatas] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(6);
+  const [postsPerPage] = useState(6);
   const lastPostIndex = currentPage * postsPerPage;
   const firstPostIndex = lastPostIndex - postsPerPage;
   const posts = datas.slice(firstPostIndex, lastPostIndex);
