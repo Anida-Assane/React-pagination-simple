@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        bat 'npm run build'
+        bat 'npm install'
+        bat 'yarn build'
       }
     }
 
